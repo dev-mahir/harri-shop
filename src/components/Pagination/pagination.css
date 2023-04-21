@@ -1,0 +1,33 @@
+._pagination-wrapper{
+  display: flex;
+  align-items: center;
+}
+._pagination-wrapper ._btn{
+  border: 1px solid rgb(212, 206, 206);
+  padding: 8px 15px;
+  font-weight: 700;
+  font-family: inherit;
+  color: rgb(92, 84, 84);
+  margin: 0 5px  ;
+  transition:  .3s all;
+}
+._pagination-wrapper ._btn.active,
+._pagination-wrapper ._btn:hover
+{
+  background-color: #f50963;
+  border-color:  #f50963;
+  color:  white;
+}
+._pagination-wrapper ._btn svg{
+  fill: rgb(92, 84, 84);
+}
+._pagination-wrapper ._btn:hover svg{
+  fill: #fff !important;
+}
+
+._pagination-wrapper button._btn._next-btn ,
+._pagination-wrapper button._btn._prev-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
