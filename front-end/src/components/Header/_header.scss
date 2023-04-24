@@ -1,0 +1,29 @@
+header {
+  .show-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    padding: 100px 50px;
+    nav {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+      a {
+        color: white;
+      }
+
+      span {
+        color: white;
+        nav {
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
