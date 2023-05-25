@@ -18,6 +18,7 @@ import ContactPage from './pages/ContactPage';
 import { ToastContainer } from 'react-toastify';
 import ErrorPage from './pages/ErrorPage';
 import ComingSoon from './pages/ComingSoon';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/cart' element={<CartPage />}></Route>
           <Route path='/user/:username' element={<UserProfile />}></Route>
           <Route path='/shop' element={<ShopPage />}></Route>
+          <Route path='/product-details/:product' element={<ProductDetails />}></Route>
           <Route path='/order' element={<PlaceOrder />}></Route>
           <Route path='/wishlist' element={<WishlistPage />}></Route>
           <Route path='/user-dashboard' element={<UserDashboard />}></Route>

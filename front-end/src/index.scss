@@ -8,6 +8,9 @@
   body {
     @apply text-sm font-secondary  overflow-x-hidden;
   }
+  h1 {
+    @apply font-secondary text-[80px] leading-[84px] font-semibold text-primary;
+  }
   h2 {
     @apply font-secondary text-[26px] leading-none font-semibold;
   }

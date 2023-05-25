@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import Newsletter from '../components/Newsletter/Newsletter'
 import ProductCard from '../components/ProductCard/ProductCard'
-import Sidebar from '../components/Sidebar/Sidebar'
 import Category from '../components/Home/Category'
+import Banner from '../components/Home/Banner'
 
 const HomePage = () => {
 
   return (
     <div>
-
+      
+      <Banner/>
 
 
 
