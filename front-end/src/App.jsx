@@ -9,22 +9,21 @@ import ForgotPassword from './pages/ForgotPassword';
 import Footer from './components/Footer/Footer';
 import CheckoutPage from './pages/CheckoutPage';
 import CartPage from './pages/CartPage';
-import UserProfile from './pages/UserProfile';
 import ShopPage from './pages/ShopPage';
 import PlaceOrder from './pages/PlaceOrder';
 import WishlistPage from './pages/WishlistPage';
 import UserDashboard from './pages/UserDashboard';
 import ContactPage from './pages/ContactPage';
-import { ToastContainer } from 'react-toastify';
 import ErrorPage from './pages/ErrorPage';
 import ComingSoon from './pages/ComingSoon';
 import ProductDetails from './pages/ProductDetails';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <ToastContainer />
+        <Toaster />
         <Header />
         <Routes>
           <Route path='*' element={<ErrorPage />}></Route>
@@ -34,12 +33,11 @@ function App() {
           <Route path='/forgot-password' element={<ForgotPassword />}></Route>
           <Route path='/checkout' element={<CheckoutPage />}></Route>
           <Route path='/cart' element={<CartPage />}></Route>
-          <Route path='/user/:username' element={<UserProfile />}></Route>
           <Route path='/shop' element={<ShopPage />}></Route>
           <Route path='/product-details/:product' element={<ProductDetails />}></Route>
-          <Route path='/order' element={<PlaceOrder />}></Route>
+          <Route path='/place-order/:id' element={<PlaceOrder />}></Route>
           <Route path='/wishlist' element={<WishlistPage />}></Route>
-          <Route path='/user-dashboard' element={<UserDashboard />}></Route>
+          <Route path='/user/:name' element={<UserDashboard />}></Route>
           <Route path='/contact' element={<ContactPage />}></Route>
           <Route path='/coming-soon' element={<ComingSoon />}></Route>
         </Routes>

@@ -12,8 +12,6 @@ const SortBy = () => {
         <p>Showing 1–9 of 27 results</p>
       </div>
       <div className='flex items-center gap-x-3'>
-        <button className='hidden md:block' ><i className='text-secondary text-2xl bx bx-grid-alt'></i></button>
-        <button className='hidden md:block'><i className='text-secondary text-3xl bx bx-menu' ></i></button>
         <div className='relative ml-3'>
           <button onClick={() => setShow(!show)} className='flex items-center font-medium gap-x-5 md:gap-x-10'>
             Sort Filtering
